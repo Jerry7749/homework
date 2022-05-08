@@ -1,0 +1,30 @@
+$font-Z: 16px;
+
+$font-c:#3F5D45;
+
+.primary-c{
+    background-color: $font-c;
+}
+
+@mixin primary{
+        font-weight: bold;
+        color: white;
+        
+        
+}
+@mixin a-primary{
+    font-size: $font-Z;
+    color: $font-c;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+@mixin h1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent:101% ;
+    display: block;
+}
+

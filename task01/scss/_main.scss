@@ -1,0 +1,163 @@
+.information{
+    display: flex;
+    margin-top: 60px;
+    
+}
+.side{
+    width: 300px;
+    text-align: center;
+    
+    
+    
+    li{
+        border: 1px solid #EAF0ED;
+        
+        
+        h2{
+            @include primary;
+            font-size: 20px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            
+        }
+        a{
+            @include a-primary;
+            font-size: 20px;
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+    
+        }
+        a:hover{
+            background-color: #EAF0ED;
+        }
+        
+    }
+  
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    li{
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+    
+    .pos-rel{
+        position: relative;
+        margin-bottom: -4px;
+        a{
+            display: block;
+        }
+    }
+    .pos-abs{
+        position: absolute;
+        top:0px;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        p{
+            writing-mode: vertical-lr;
+            margin-left: 20px;
+            padding: 10px ;
+            background-color: $font-c;
+            font-size: $font-Z;
+            @include primary;
+            
+        }
+        img{
+            display: block;
+            width: 20px;
+            height: 18px;
+            margin-top: 19px;
+            margin-right: 22px;
+        }
+    }
+
+    table,td{
+        border-collapse: collapse;
+        border: 1px solid #EAF0ED;
+        text-align: center;
+    }
+    table{
+        width: 300px;
+    }
+    td{
+       padding-top: 14px;
+       padding-bottom: 14px;
+       color: $font-c; 
+       font-weight: bold;
+       
+    }
+    th{
+        a{
+            @include a-primary;
+            font-size: 24px;
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: #EAF0ED;
+            &:hover{
+                color: blue;
+            }
+    
+           }
+           
+
+    }
+}
+
+.next{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    li{
+        border: 1px solid #EAF0ED;
+        
+        
+        
+               
+    }
+    .arrow a{
+        padding: 18px;
+        display: block;
+        
+    }
+    .nub {
+        &:hover{
+            background-color: $font-c;
+            
+        }
+       
+        
+        a{
+            @include a-primary;
+            display: block;
+            padding: 16px 24px;
+            font-size: 20px;
+            line-height: 1.6;
+            &:hover{
+                color: white;
+            }
+
+           
+           
+        }
+    }
+}

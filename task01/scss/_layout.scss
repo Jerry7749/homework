@@ -1,0 +1,47 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    font-size: $font-Z;
+    
+}
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 30px 42px;
+}
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    h1 a{
+       @include h1; 
+       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+       width: 211px;
+       height: 40px;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    ul{
+        margin-right: 80px;
+        display: flex;
+        justify-content: space-between;
+        width: 215px;
+        align-items: center;
+        a{
+            @include a-primary;
+            
+        }
+        a:hover{
+            color: blue;
+        }
+        
+
+    }
+    .cart{
+        height: 24px;
+    }
+    
+}

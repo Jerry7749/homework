@@ -1,0 +1,311 @@
+.primary-c {
+  background-color: #3F5D45;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Microsoft JhengHei;
+  font-size: 16px;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 30px 42px;
+}
+
+.header {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header h1 a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+  display: block;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+  width: 211px;
+  height: 40px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu ul {
+  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 215px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu ul a {
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu ul a:hover {
+  color: blue;
+}
+
+.menu .cart {
+  height: 24px;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.side {
+  width: 300px;
+  text-align: center;
+}
+
+.side li {
+  border: 1px solid #EAF0ED;
+}
+
+.side li h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.side li a {
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.side li a:hover {
+  background-color: #EAF0ED;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 640px;
+}
+
+.list li {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list .pos-rel {
+  position: relative;
+  margin-bottom: -4px;
+}
+
+.list .pos-rel a {
+  display: block;
+}
+
+.list .pos-abs {
+  position: absolute;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+
+.list .pos-abs p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #3F5D45;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.list .pos-abs img {
+  display: block;
+  width: 20px;
+  height: 18px;
+  margin-top: 19px;
+  margin-right: 22px;
+}
+
+.list table, .list td {
+  border-collapse: collapse;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+.list table {
+  width: 300px;
+}
+
+.list td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #3F5D45;
+  font-weight: bold;
+}
+
+.list th a {
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #EAF0ED;
+}
+
+.list th a:hover {
+  color: blue;
+}
+
+.next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.next li {
+  border: 1px solid #EAF0ED;
+}
+
+.next .arrow a {
+  padding: 18px;
+  display: block;
+}
+
+.next .nub:hover {
+  background-color: #3F5D45;
+}
+
+.next .nub a {
+  font-size: 16px;
+  color: #3F5D45;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 16px 24px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.next .nub a:hover {
+  color: white;
+}
+/*# sourceMappingURL=all.css.map */
