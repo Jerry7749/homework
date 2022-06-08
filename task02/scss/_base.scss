@@ -1,0 +1,38 @@
+// *{
+//     outline: 1px solid;
+// }
+
+*,*:before,*:after{
+    box-sizing: border-box;
+    
+    
+    
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+sub{
+    vertical-align: sub;
+}
+h1 a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    display: block;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1120px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
